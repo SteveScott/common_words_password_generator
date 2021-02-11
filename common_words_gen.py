@@ -4,7 +4,7 @@ import random
 
 def generate_n_common_words(n):
     #open file and read each line into a list
-    word_list = open('wordlist.10000.txt', 'r').readlines()
+    word_list = open('wordlist.sanitized.txt', 'r').readlines()
 
     #chose five random words.
     list_length = len(word_list)
