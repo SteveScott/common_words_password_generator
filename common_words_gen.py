@@ -4,9 +4,9 @@ import random
 
 def generate_n_common_words(n):
     #open file and read each line into a list
-    word_list = open('wordlist.sanitized.txt', 'r').readlines()
+    word_list = open('wordlist.bip-39.txt', 'r').readlines()
 
-    #chose five random words.
+    #chose 12 random words.
     list_length = len(word_list)
     answer = ""
     for i in range(0,n):
@@ -17,4 +17,4 @@ def generate_n_common_words(n):
             answer = "".join([answer, '_{}'.format(word_list[j]).strip()])
     return answer
 
-print(generate_n_common_words(4))
+print(generate_n_common_words(12))
